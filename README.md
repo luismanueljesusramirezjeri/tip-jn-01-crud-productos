@@ -73,7 +73,7 @@ La aplicación utiliza Hibernate para crear o actualizar automáticamente las ta
 Ingresar a la carpeta del backend:
 
 ```bash
-cd producto-api
+cd producto-api/producto-api
 ```
 
 Ejecutar la aplicación:
