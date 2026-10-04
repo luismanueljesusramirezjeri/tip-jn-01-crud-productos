@@ -1,0 +1,10 @@
+**/target/
+**/node_modules/
+**/dist/
+**/.angular/
+
+.idea/
+.vscode/
+
+.DS_Store
+Thumbs.db

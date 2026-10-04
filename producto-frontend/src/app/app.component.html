@@ -1,0 +1,11 @@
+<app-producto-formulario
+  [producto]="productoSeleccionado"
+  (productoGuardado)="actualizarLista()">
+</app-producto-formulario>
+
+<hr>
+
+<app-producto-lista
+  (editar)="seleccionarProducto($event)">
+</app-producto-lista>
+

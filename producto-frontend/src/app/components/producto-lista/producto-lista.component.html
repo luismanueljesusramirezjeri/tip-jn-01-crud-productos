@@ -1,0 +1,39 @@
+<h2>Lista de Productos</h2>
+
+<input
+  type="text"
+  #textoBusqueda
+  (input)="buscarProducto(textoBusqueda.value)"
+  placeholder="Buscar por nombre">
+
+<br><br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let producto of productosFiltrados">
+      <td>{{ producto.nombre }}</td>
+      <td>{{ producto.descripcion }}</td>
+      <td>{{ producto.cantidad }}</td>
+      <td>{{ producto.precio }}</td>
+      <td>
+        <button type="button" (click)="editarProducto(producto)">
+          Editar
+        </button>
+
+        <button type="button" (click)="eliminarProducto(producto.id!)">
+          Eliminar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
